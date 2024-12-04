@@ -2,8 +2,8 @@ package CoffeeShop;
 
 public class MelangeWithSugar extends CoffeeDecorator {
 
-    public MelangeWithSugar(Coffee coffee) {
-        super(coffee);
+    public MelangeWithSugar() {
+        super(new Melange());
     }
 
     @Override

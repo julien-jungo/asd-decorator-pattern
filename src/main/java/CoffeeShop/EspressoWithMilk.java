@@ -2,8 +2,8 @@ package CoffeeShop;
 
 public class EspressoWithMilk extends CoffeeDecorator {
 
-    public EspressoWithMilk(Coffee coffee) {
-        super(coffee);
+    public EspressoWithMilk() {
+        super(new Espresso());
     }
 
     @Override
