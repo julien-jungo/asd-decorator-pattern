@@ -15,5 +15,8 @@ public class Main {
 
         Coffee melangeWithSugar = new SugarCoffee(new Melange());
         System.out.println(melangeWithSugar.description() + ": €" + melangeWithSugar.price());
+
+        Coffee espressoWithMilkAndSugar = new SugarCoffee(new MilkCoffee(new Espresso()));
+        System.out.println(espressoWithMilkAndSugar.description() + ": €" + espressoWithMilkAndSugar.price());
     }
 }
