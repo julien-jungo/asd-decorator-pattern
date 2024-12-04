@@ -16,6 +16,3 @@ abstract class CoffeeDecorator extends Coffee {
         return decoratedCoffee.description();
     }
 }
-
-// TODO: Create Milk and Sugar types, using the Decorator Pattern (extending CoffeeDecorator)
-// TODO: Make use of the "super()" keyword and make sure that Milk and Sugar adjust the pricing as well as the description (e.g. adding " (With Milk)")

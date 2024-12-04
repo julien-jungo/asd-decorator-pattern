@@ -10,6 +10,10 @@ public class Main {
         Coffee melange = new Melange();
         System.out.println(melange.description() + ": €" + melange.price());
 
-        //TODO: Add two new Coffees: Espresso with Milk and Melange with Sugar. Make use of the DecoraterPattern.
+        Coffee espressoWithMilk = new EspressoWithMilk(espresso);
+        System.out.println(espressoWithMilk.description() + ": €" + espressoWithMilk.price());
+
+        Coffee melangeWithSugar = new MelangeWithSugar(melange);
+        System.out.println(melangeWithSugar.description() + ": €" + melangeWithSugar.price());
     }
 }
