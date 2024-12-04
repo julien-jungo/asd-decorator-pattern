@@ -1,9 +1,9 @@
 package CoffeeShop;
 
-public class MelangeWithSugar extends CoffeeDecorator {
+public class SugarCoffee extends CoffeeDecorator {
 
-    public MelangeWithSugar() {
-        super(new Melange());
+    public SugarCoffee(Coffee decoratedCoffee) {
+        super(decoratedCoffee);
     }
 
     @Override

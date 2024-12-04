@@ -10,10 +10,10 @@ public class Main {
         Coffee melange = new Melange();
         System.out.println(melange.description() + ": €" + melange.price());
 
-        Coffee espressoWithMilk = new EspressoWithMilk();
+        Coffee espressoWithMilk = new MilkCoffee(new Espresso());
         System.out.println(espressoWithMilk.description() + ": €" + espressoWithMilk.price());
 
-        Coffee melangeWithSugar = new MelangeWithSugar();
+        Coffee melangeWithSugar = new SugarCoffee(new Melange());
         System.out.println(melangeWithSugar.description() + ": €" + melangeWithSugar.price());
     }
 }
